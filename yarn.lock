@@ -937,6 +937,11 @@
   dependencies:
     tslib "^2.1.0"
 
+"@capacitor/toast@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@capacitor/toast/-/toast-1.0.2.tgz#3984960b797a6dc6ac971b0602bf8c363b39394f"
+  integrity sha512-4R4aUP/BeqQ9/CRJpuoE+U+3tO1pmoZE8fNPhmcXZJYNedprX/uZfNzxBDz6kCJ90RETjrF4e/BxtBFXLiXxxQ==
+
 "@codetrix-studio/capacitor-google-auth@^3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@codetrix-studio/capacitor-google-auth/-/capacitor-google-auth-3.0.2.tgz#a095135311805bf1134bcf81a8246788008f3849"
