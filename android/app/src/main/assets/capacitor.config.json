@@ -1,0 +1,6 @@
+{
+	"appId": "io.phloxcorp.eldo.qa2",
+	"appName": "Capacitor Test",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
