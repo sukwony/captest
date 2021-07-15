@@ -1,4 +1,4 @@
-package io.phloxcorp.eldo.qa2;
+package io.phloxcorp.eldo.qa2.plugins;
 
 import com.getcapacitor.JSObject;
 import com.getcapacitor.Plugin;
@@ -7,7 +7,7 @@ import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
 
 @CapacitorPlugin(name = "Echo")
-public class EchoPlugin extends Plugin {
+public class Echo extends Plugin {
     @PluginMethod()
     public void echo(PluginCall call) {
         String value = call.getString("value");

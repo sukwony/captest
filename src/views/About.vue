@@ -10,7 +10,7 @@
 import { defineComponent } from 'vue'
 
 import { Toast } from '@capacitor/toast'
-import Echo from '@/echo'
+import { Echo } from '@/plugins/echo'
 import GoogleAuth from '@/google'
 
 export default defineComponent({
