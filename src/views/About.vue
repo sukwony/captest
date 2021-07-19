@@ -5,7 +5,9 @@
       <button @click="onClick">Google Login</button>
       <button @click="onClickKakaoLogin">Kakao Login</button>
       <button @click="onClickCallEchoPlugin">Call Echo Plugin</button>
+      <button @click="onClickCheckVideo">Check Video</button>
     </div>
+    <video ref="video" src="https://d3n6mmqdzfby49.cloudfront.net/3/1/bvO-95HhTIyZt01ChBhD8A.m3u8" controls></video>
   </div>
 </template>
 
@@ -31,6 +33,12 @@ export default defineComponent({
     async onClickCallEchoPlugin () {
       const { value } = await Echo.echo({ value: 'Hello World' })
       await Toast.show({ text: `from plugin: ${value}` })
+    },
+    async onClickCheckVideo () {
+      const video = this.$refs.video as HTMLMediaElement
+      const canPlay = video.canPlayType('application/vnd.apple.mpegurl')
+      console.log(40, canPlay)
+      await Toast.show({ text: `can play? ${canPlay}` })
     }
   }
 })
