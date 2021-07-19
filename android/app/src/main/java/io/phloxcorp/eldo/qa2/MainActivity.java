@@ -8,6 +8,7 @@ import com.kakao.sdk.common.KakaoSdk;
 
 import io.phloxcorp.eldo.qa2.plugins.Echo;
 import io.phloxcorp.eldo.qa2.plugins.KakaoLogin;
+import io.phloxcorp.eldo.qa2.plugins.Nicepay;
 
 public class MainActivity extends BridgeActivity {
     @Override
@@ -18,5 +19,6 @@ public class MainActivity extends BridgeActivity {
         registerPlugin(GoogleAuth.class);
         registerPlugin(Echo.class);
         registerPlugin(KakaoLogin.class);
+        registerPlugin(Nicepay.class);
     }
 }

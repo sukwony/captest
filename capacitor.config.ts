@@ -11,6 +11,9 @@ const config: CapacitorConfig = {
       serverClientId: '450429795824-6ms86sk1kispv9hn8jf53t3lf4ij2sk9.apps.googleusercontent.com',
       forceCodeForRefreshToken: true
     }
+  },
+  server: {
+    cleartext: true
   }
 }
 
