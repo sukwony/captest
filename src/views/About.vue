@@ -22,6 +22,7 @@
         <button @click="onClickCallEchoPlugin">Call Echo Plugin</button>
         <button @click="onClickCheckVideo">Check Video</button>
         <button @click="onClickNicepay">Nicepay</button>
+        <button @click="onClickNaverLogin">Naver Login</button>
       </div>
       <div>&nbsp;</div>
       <div>&nbsp;</div>
@@ -41,6 +42,7 @@ import { defineComponent } from 'vue'
 
 import { Echo } from '@/plugins/echo'
 import { KakaoLogin } from '@/plugins/kakao-login'
+import { NaverLogin } from '@/plugins/naver-login'
 import { Nicepay } from '@/plugins/nicepay'
 import GoogleAuth from '@/google'
 
@@ -74,6 +76,11 @@ export default defineComponent({
       const { accessToken } = await KakaoLogin.login()
       console.log(28, accessToken)
       await Toast.show({ text: `Kakao accessToken: ${accessToken}` })
+    },
+    async onClickNaverLogin () {
+      const { accessToken } = await NaverLogin.login()
+      console.log(28, accessToken)
+      await Toast.show({ text: `Naver accessToken: ${accessToken}` })
     },
     async onClickCallEchoPlugin () {
       const { value } = await Echo.echo({ value: 'Hello World' })

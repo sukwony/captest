@@ -38,6 +38,7 @@ dependencies {
     androidTestImplementation "androidx.test.espresso:espresso-core:$androidxEspressoCoreVersion"
     implementation project(':capacitor-cordova-android-plugins')
     implementation "com.kakao.sdk:v2-user:2.5.2"
+    implementation "com.naver.nid:naveridlogin-android-sdk:4.2.6"
 }
 
 apply from: 'capacitor.build.gradle'
